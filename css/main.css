@@ -29,6 +29,7 @@ border-radius: 10px;
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
+    font-family: "Playpen Sans", cursive;
 }
 a{
     text-decoration: none;
@@ -108,7 +109,6 @@ nav{
     .p-container{
         overflow: hidden;
         p{
-            font-family: sans-serif;
             animation: revealy 2s cubic-bezier(0,.66,.26,.98);
         }
     }
@@ -230,6 +230,36 @@ nav{
 
     
 }
+/*##################################### Start Projects #####################################*/
+#project{
+    .slide-project{
+        height: 300px;
+    }
+    img{
+        width: 10%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #fff;
+    }
+    img:hover{
+        width: 25%;
+    }
+    .proj-link{
+        color: var(--mian-color) !important;
+        text-shadow: 0 0 15px var(--text-color);
+        position: relative;
+    }
+    .proj-link::before{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 2px;
+        width: 75%;
+        height: 2px;
+        background-color: var(--mian-color);
+    }
+}
 
 /*##################################### Start Education #####################################*/
 #education{
@@ -346,22 +376,6 @@ nav{
     }
 }
 
-/*##################################### Start Projects #####################################*/
-#project{
-    .slide-project{
-        height: 300px;
-    }
-    img{
-        width: 10%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-        border: 2px solid #fff;
-    }
-    img:hover{
-        width: 25%;
-    }
-}
 
 /*##################################### Start Contact #####################################*/
 #contact{
