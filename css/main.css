@@ -439,6 +439,17 @@ nav{
     h2 span{
         color: var(--mian-color);
     }
+    ul{
+        li{
+            a{
+                i{
+                    color: var(--text-color);
+                }
+                color: var(--mian-color) !important;
+                text-shadow: 0 0 15px var(--text-color);
+            }
+        }
+    }
     form{
         .input-box input, textarea{
             font-size: 20px;
